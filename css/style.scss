@@ -1,0 +1,76 @@
+@import
+url(http://fonts.googleapis.com/css?family=Cabin:400,500,700);
+
+@import
+url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
+
+@import
+url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  color: rgba(0,0,0,0.6);
+}
+
+a {
+  color: rgba(0,0,0,0.6);
+}
+
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: rgba(0,0,0,0.9);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+canvas {
+	display:block;
+	vertical-align:bottom;
+}
+
+#particles-js {
+  height:100%;
+}
+
+#logo {
+  width: 20%;
+}
+
+.bio {
+  font-size: 24px;
+  padding-top: 20px;
+  color: #000;
+}
+
+.brand:hover,
+.brand:active,
+.brand:visited,
+.bio:hover,
+.bio:active,
+.bio:visited {
+  border: 0;
+}
+
+.footer{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  line-height: 1.5;
+
+  .container {
+    padding-top: 20px;
+
+    a {
+      padding-right: 5px;
+    }
+  }
+
+}

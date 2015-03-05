@@ -8,10 +8,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- GOOGLE WEB FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800' rel='stylesheet' type='text/css'>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
@@ -20,15 +18,64 @@
   </head>
 
   <body>
+    <!-- NAVIGATION -->
+    <nav class="fixed-top" id="navigation">
+      <div id="header-container" class="container">
+        <div class="row-fluid">
+          <div class="span12 center">
+            <!-- LOGO -->
+            <a class="brand pull-left" href="http://rosachoi.github.io/">
+              <img id="logo" src="img/rosa-logo.svg" alt="Rosa Choi's Logo">
+            </a>
+            <a class="bio pull-right fa fa-info-circle" href="#"></a>
+            <!-- END LOGO -->
+
+            <!-- MOBILE MENU BUTTON -->
+            <!-- <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="menu-underline">menu</span>
+            </div> -->
+            <!-- END MOBILE MENU BUTTON -->
+
+            <!-- MAIN MENU -->
+            <!-- <ul id="main-menu" class="nav-collapse collapse">
+              <li><a href="#page-welcome">Home</a></li>
+              <li><a href="#page-work">Work</a></li>
+              <li><a href="#page-features">Services</a></li>
+              <li><a href="#page-about">About</a></li>
+              <li><a href="#page-blog">Photos</a></li>
+              <li><a href="#page-contact">Contact</a></li>
+            </ul> -->
+            <!-- END MAIN MENU -->
+          </div>
+        </div>
+      </div>
+    </nav>
+     <!-- END NAVIGATION -->
+
+    <div id="particles-js"></div>
     <div class="container">
-      <h1>Hello World!</h1>
+
 
     </div>
 
+    <footer class="footer">
+      <div class="container text-center">
+        <p>
+          Follow me on
+          <a class="github" href="https://github.com/RosaChoi" target="_blank"> Github</a>
+          <a class="linkedin" href="https://www.linkedin.com/in/rosachoi7" target="_blank">Linkedin </a>
+          <a class="medium" href="https://www.linkedin.com/in/rosachoi7" target="_blank">Medium</a>
+          and
+          <a class="email" href="mailto:rosa@waselrosa.com" target="_blank">rosa.uniq@gmail.com</a>
+        </p>
 
+      </div>
+    </footer>
 
   <script charset="utf-8" src="js/jquery-2.1.3.min.js"></script>
   <script charset="utf-8" src="js/bootstrap.min.js"></script>
-  <script charset="utf-8" src="js/app.js"></script>
+  <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
+  <script charset="utf-8" src="js/backgroundParticle.js"></script>
+  <script charset="utf-8" src="js/main.js"></script>
   </body>
 </html>

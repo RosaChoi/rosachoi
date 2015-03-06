@@ -1,31 +1,73 @@
 @import
-url(http://fonts.googleapis.com/css?family=Cabin:400,500,700);
+url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Josefin+Sans:300,400,700|Open+Sans:400,300,700);
 
-@import
-url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
+// Black to White
+$black:       #000000;
+$border-gray: #CDCDCD;
+$white:       #FFFFFF;
+$red: 				#B2273A;
 
-@import
-url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@mixin myButton {
+	padding: 0.6em 2em;
+	font-size: 16px;
+	line-height: 1.5;
+  color: $white;
+	background-color: $black;
+	border: 1px solid $black;
+	border-radius: 0;
+	text-shadow: none;
+	box-shadow: none;
+
+  &:hover{
+    background-color: transparent;
+    border: 2px solid $black;
+    color: $black;
+  }
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: $black;
+  background-color: transparent;
+  border-color: $black;
+}
 
 html,
 body {
   font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
   margin:0;
-  color: rgba(0,0,0,0.6);
+  color: rgba($black,0.6);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: $black;
+	text-transform: uppercase;
 }
 
 a {
-  color: rgba(0,0,0,0.6);
+  color: rgba($black,0.6);
 }
 
 a:hover,
 a:active,
-a:visited {
+a:visited,
+a:focus {
   text-decoration: none;
-  color: rgba(0,0,0,0.9);
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
 }
+
+a:hover {
+	color: rgba($black,0.9);
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+}
+
+
 
 canvas {
 	display:block;
@@ -41,10 +83,14 @@ canvas {
 }
 
 .bio {
-  font-size: 24px;
-  padding-top: 20px;
-  color: #000;
-  z-index: 2;
+  margin-top: 20px;
+  font-size: 2em;
+  color: $black;
+  &:hover,
+	&:active,
+	&:visited {
+    color: rgba($black, 0.7);
+  }
 }
 
 .brand:hover,
@@ -74,4 +120,32 @@ canvas {
     }
   }
 
+}
+
+#bioContent {
+  z-index: 10;
+  position:absolute;
+  right: 0;
+  display: none;
+}
+
+.my-btn {
+  @include myButton;
+}
+
+#avatar {
+  width: 40%;
+}
+
+.get-in-touch {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.3em;
+	padding-top: 20px;
+}
+
+.get-in-touch a:hover,
+.get-in-touch a:focus {
+	cursor:pointer;
+	color: $red;
+	border: 0;
 }

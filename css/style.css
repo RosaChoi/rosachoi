@@ -1,22 +1,39 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Josefin+Sans:300,400,700|Open+Sans:400,300,700);
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #000000;
+  background-color: transparent;
+  border-color: #000000; }
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   color: rgba(0, 0, 0, 0.6); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase; }
 
 a {
   color: rgba(0, 0, 0, 0.6); }
 
 a:hover,
 a:active,
-a:visited {
-  text-decoration: none;
+a:visited,
+a:focus {
+  text-decoration: none; }
+
+a:hover {
   color: rgba(0, 0, 0, 0.9);
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000; }
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000; }
 
 canvas {
   display: block;
@@ -29,9 +46,11 @@ canvas {
   width: 20%; }
 
 .bio {
-  font-size: 24px;
-  padding-top: 20px;
-  color: #000; }
+  margin-top: 20px;
+  font-size: 2em;
+  color: #000000; }
+  .bio:hover, .bio:active, .bio:visited {
+    color: rgba(0, 0, 0, 0.7); }
 
 .brand:hover,
 .brand:active,
@@ -54,5 +73,40 @@ canvas {
     padding-top: 20px; }
     .footer .container a {
       padding-right: 5px; }
+
+#bioContent {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  display: none; }
+
+.my-btn {
+  padding: 0.6em 2em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none; }
+  .my-btn:hover {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000; }
+
+#avatar {
+  width: 40%; }
+
+.get-in-touch {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  padding-top: 20px; }
+
+.get-in-touch a:hover,
+.get-in-touch a:focus {
+  cursor: pointer;
+  color: #B2273A;
+  border: 0; }
 
 /*# sourceMappingURL=style.css.map */

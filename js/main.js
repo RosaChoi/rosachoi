@@ -10,5 +10,5 @@ window.onload = function(e) {
 // BIO ICON CLICK EVENT
 function infoClicked() {
   var hidden = $('#bioContent');
-  hidden.toggle("slide");
+  $('#bioContent').slideToggle(2000);
 }

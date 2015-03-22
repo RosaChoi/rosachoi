@@ -82,7 +82,6 @@ canvas {
 
 .bio-text {
   width: 396px;
-  display: none;
   position: absolute;
   top: 100px;
   right: 0;
@@ -122,5 +121,8 @@ canvas {
   text-transform: uppercase;
   position: relative;
   top: 20px; }
+
+.hide {
+  opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

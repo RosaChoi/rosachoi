@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Rosa Choi</title>
     <meta charset="utf-8">
@@ -9,6 +9,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Favicon -->
@@ -19,7 +20,7 @@
 
   <body>
     <!-- NAVIGATION -->
-    <nav class="fixed-top" id="navigation">
+    <nav class="fixed-top container-fluid" id="navigation">
       <div id="header-container" class="container">
         <div class="row-fluid">
           <div class="span12 center">
@@ -39,6 +40,7 @@
               <li>
                 <!-- INFO BUTTON -->
                 <a class="bio pull-right fa fa-info-circle" href="#" data-target="#bioContent"></a>
+                <a class="bio hide pull-right fa fa fa-times" href="#" data-target="#bioContent"></a>
               </li>
             </ul>
           </div>
@@ -48,7 +50,7 @@
     <!-- END NAVIGATION -->
 
     <!-- BIO CONTENT AND RESUME -->
-    <div class="bio-text" id="bioContent" >
+    <div class="bio-text hide" id="bioContent" >
       <div class="container col-sm-12 text-center">
         <img id="avatar" src="img/rosa-red.png" alt="Rosa's Photo" />
         <h4>Rosa Choi</h4>

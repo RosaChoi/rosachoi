@@ -1,6 +1,15 @@
-    $(document).ready(function(){
+$(document).ready(function(){
   $('.bio.fa-info-circle').on('click', infoIconClicked);
+  $('.projects').on('click', displayProjects);
+  $('.email').on('click', sendEmailClick);
+  $('.projects').on('click', displayProjects)
 })
+
+function displayProjects() {
+  var projects = $('#projects');
+
+  projects.fadeIn('slow');
+}
 
 
 function infoIconClicked() {
@@ -25,4 +34,14 @@ function infoIconClicked() {
       infoIcon.removeClass('hide');
     });
   });
+}
+
+function sendEmailClick() {
+  var sendEmail = $('.email');
+      emailShake = 'animated shake';
+      animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+      sendEmail.addClass(emailShake).on(animationEnd, function(){
+        $(this).removeClass(emailShake);
+      });
 }

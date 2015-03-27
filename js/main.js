@@ -2,10 +2,7 @@ $(document).ready(function(){
   $('.bio.fa-info-circle').on('click', infoIconClicked);
   $('.projects').on('click', displayProjects);
   $('.email').on('click', sendEmailClick);
-});
-
-
-
+})
 
 function infoIconClicked() {
   var shortBio = $('#bioContent');

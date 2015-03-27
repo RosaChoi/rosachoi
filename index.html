@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <title>Rosa Choi</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>Rosa Choi</title>
     <meta name="description" content="San Francisco based Software Developer Rosa Choi's portfolio site">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Favicon -->
@@ -19,37 +26,38 @@
 
   <body>
     <!-- NAVIGATION -->
-    <nav class="fixed-top" id="navigation">
-      <div id="header-container" class="container">
+    <nav class="fixed-top container-fluid" id="navigation">
+      <div id="header-container" class="container-fluid col-xs-12">
         <div class="row-fluid">
-          <div class="span12 center">
+          <!-- <div class="col-sm-12"> -->
             <!-- LOGO -->
             <ul class="navbar list-unstyled">
-              <li>
+              <li class="col-sm-3">
                 <a class="brand pull-left" href="http://rosachoi.github.io/">
                   <img id="logo" src="img/rosa-logo.svg" alt="Rosa Choi's Logo">
                 </a>
               </li>
-              <li>
+              <li class="col-sm-2 col-xs-4">
                 <a class="projects" href="#">Projects</a>
               </li>
-              <li>
+              <li class="col-sm-2 col-xs-4">
                 <a class="playground" href="#">Playground</a>
               </li>
-              <li>
+              <li class="col-sm-2 col-sm-offset-3 col-xs-2 col-xs-offset-2">
                 <!-- INFO BUTTON -->
                 <a class="bio pull-right fa fa-info-circle" href="#" data-target="#bioContent"></a>
+                <a class="bio hide pull-right fa fa-times" href="#" data-target="#bioContent"></a>
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </nav>
     <!-- END NAVIGATION -->
 
     <!-- BIO CONTENT AND RESUME -->
-    <div class="bio-text" id="bioContent" >
-      <div class="container col-sm-12 text-center">
+    <div class="bio-text hide" id="bioContent" >
+      <div class="container-fluid col-sm-12 text-center">
         <img id="avatar" src="img/rosa-red.png" alt="Rosa's Photo" />
         <h4>Rosa Choi</h4>
         <p><em>Designer turned Software Developer</em></p>
@@ -62,18 +70,77 @@
       </div>
     </div>
 
+    <!-- PROJECTS VIEW -->
+    <div id="projects" class="row col-sm-12">
+      <!-- PROJECT MENU -->
+      <div id="projectMenu" class="col-sm-5 col-sm-offset-3">
+        <svg class="project-menu-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 1072 68" enable-background="new 0 0 1072 68" xml:space="preserve">
+          <line fill="none" stroke="#696969" stroke-width="1.06" stroke-miterlimit="10" x1="35.6" y1="32.3" x2="1044.1" y2="32.3"/>
+          <circle id="projA" cx="35.6" cy="32.3" r="6.2"/>
+          <circle id="projB" cx="237.7" cy="32.1" r="6.2"/>
+          <circle id="projC" cx="439.3" cy="32.1" r="6.2"/>
+          <circle id="projD" cx="640.9" cy="32.1" r="6.2"/>
+          <circle id="projE" cx="842.5" cy="32.1" r="6.2"/>
+          <circle id="projF" cx="1044.1" cy="32.1" r="6.2"/>
+        </svg>
+      </div>
+      <div id="projectContainer" class="project container col-sm-8 col-sm-offset-2 text-center">
+        <h2 class="project-title">gCamp</h2>
 
+        <div class="row project-details">
+          <ul class="list-unstyled list-inline">
+            <li>
+              ROLE <strong>DEVELOPER</strong>
+            </li>
+            <li>
+              CONTEXT <strong>SCHOOL PROJECT</strong>
+            </li>
+            <li>
+              DATE <strong>DEC 2014</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="row project-description">
+          <p>Remake of Basecamp - a simplified version of a project management application. Create an account, establish a project, add team members and assign tasks.</p>
+        </div>
+        <div class="project-sample-image">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 963.1 597.1" enable-background="new 0 0 963.1 597.1" xml:space="preserve">
+            <g id="Layer_4">
+              <image overflow="visible" width="2376" height="1250" xlink:href="img/gcamp_tasks.png" transform="matrix(0.392 0 0 0.392 18.3551 90.6765)"/>
+            </g>
+            <g id="Layer_6">
+              <image overflow="visible" width="2544" height="1338" xlink:href="img/gcamp_landing.png" transform="matrix(0.3659 0 0 0.3659 19.0707 51.8477)"/>
+            </g>
+            <g id="Layer_5">
+              <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="18.4" y1="52.8" x2="949.8" y2="52.8"/>
+              <path fill="none" stroke="#000000" stroke-width="2.96" stroke-miterlimit="10" d="M949.8 580.7H18.4V27.3c0-8.2 6.8-15 15-15h901.5c8.2 0 15 6.8 15 15V580.7z"/>
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="42.6" cy="33.9" r="6.5"/>
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="64.1" cy="33.9" r="6.5"/>
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="85.6" cy="33.9" r="6.5"/>
+            </g>
+          </svg>
 
-    <div class="container">
-
-
-
+        </div>
+        <div class="row project-technology">
+          <p><strong>Technologies used for this project:</strong></p>
+          <ul class="technologies list-unstyled list-inline">
+            <li>Ruby on Rails</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="row project-outcome">
+          <p><strong>Outcome</strong></p>
+          <ul class="list-unstyled list-inline">
+            <li class="fa fa-github"><a class="project-link" href="https://github.com/RosaChoi/gCamp" target="_blank"> Repo</a></li>
+            <li class="fa fa-desktop"><a class="project-link" href="https://still-waters-3663.herokuapp.com/" target="_blank"> Launch App</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
     <!-- PARTICLE BACKGROUND -->
-    <div id="particles-js"></div>
+    <div id="particles-js" class="col-sm-12"></div>
 
-    <footer class="footer">
+    <footer class="footer col-sm-12">
       <div class="container text-center">
         <p>
           Follow me on
@@ -91,6 +158,7 @@
   <script charset="utf-8" src="js/bootstrap.min.js"></script>
   <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
   <script charset="utf-8" src="js/backgroundParticle.js"></script>
+  <script charset="utf-8" src="js/project.js"></script>
   <script charset="utf-8" src="js/main.js"></script>
   </body>
 </html>

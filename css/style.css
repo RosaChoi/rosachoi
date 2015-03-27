@@ -142,19 +142,8 @@ canvas {
 #projects {
   display: none; }
 
-#projectMenu {
-  z-index: 20;
-  position: absolute;
-  left: 70px;
-  max-width: 60px;
-  min-height: 400px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 4px; }
-
-#projectMenu .fa-times {
-  font-size: 1.6em;
-  padding: 10px;
-  color: rgba(255, 255, 255, 0.7); }
+.project-menu-line {
+  z-index: 20; }
 
 #projectContainer {
   z-index: 1;

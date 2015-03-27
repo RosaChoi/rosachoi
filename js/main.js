@@ -2,14 +2,9 @@ $(document).ready(function(){
   $('.bio.fa-info-circle').on('click', infoIconClicked);
   $('.projects').on('click', displayProjects);
   $('.email').on('click', sendEmailClick);
-  $('.projects').on('click', displayProjects)
-})
+});
 
-function displayProjects() {
-  var projects = $('#projects');
 
-  projects.fadeIn('slow');
-}
 
 
 function infoIconClicked() {

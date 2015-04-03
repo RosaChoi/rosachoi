@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <title>Rosa Choi</title>
+    <title>rosa choi</title>
     <meta name="description" content="San Francisco based Software Developer Rosa Choi's portfolio site">
 
     <!-- Stylesheets -->
@@ -27,33 +27,31 @@
   <body>
     <!-- NAVIGATION -->
     <nav class="fixed-top container-fluid" id="navigation">
-      <div id="header-container" class="container-fluid col-xs-12">
-        <div class="row-fluid">
-          <!-- <div class="col-sm-12"> -->
-            <!-- LOGO -->
-            <ul class="navbar list-unstyled">
-              <li class="col-sm-3">
-                <a class="brand pull-left" href="http://rosachoi.github.io/">
-                  <img id="logo" src="img/rosa-logo.svg" alt="Rosa Choi's Logo">
-                </a>
-              </li>
-              <li class="col-sm-2 col-xs-4">
-                <a class="projects" href="#">Projects</a>
-              </li>
-              <li class="col-sm-2 col-xs-4">
-                <a class="playground" href="#">Playground</a>
-              </li>
-              <li class="col-sm-2 col-sm-offset-3 col-xs-2 col-xs-offset-2">
-                <!-- INFO BUTTON -->
-                <a class="bio pull-right fa fa-info-circle" href="#" data-target="#bioContent"></a>
-                <a class="bio hide pull-right fa fa-times" href="#" data-target="#bioContent"></a>
-              </li>
-            </ul>
-          <!-- </div> -->
+        <div id="header-container" class="container-fluid col-xs-12">
+          <div class="row-fluid">
+              <!-- LOGO -->
+              <ul class="navbar list-unstyled">
+                <li class="col-sm-3">
+                  <a class="brand pull-left" href="http://rosachoi.github.io/">
+                    <img id="logo" src="img/rosa-logo.svg" alt="Rosa Choi's Logo">
+                  </a>
+                </li>
+                <li class="col-sm-4 col-xs-4 text-center">
+                  <a class="projects" href="#">PROJECTS</a>
+                </li>
+                <!-- <li class="col-sm-2 col-xs-4">
+                  <a class="playground" href="#">PLAYGROUND</a>
+                </li> -->
+                <li class="col-sm-2 col-xs-2 col-xs-offset-2 pull-right">
+                  <!-- INFO BUTTON -->
+                  <a class="bio pull-right fa fa-info-circle" href="#" data-target="#bioContent"></a>
+                  <a class="bio hide pull-right fa fa-times" href="#" data-target="#bioContent"></a>
+                </li>
+              </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- END NAVIGATION -->
+      </nav>
+      <!-- END NAVIGATION -->
 
     <!-- BIO CONTENT AND RESUME -->
     <div class="bio-text hide" id="bioContent" >
@@ -65,78 +63,390 @@
           I strive to create beautiful digital experiences, putting the user at the center of everything I make.
           I merge art and technology to create a refined digital experience that works seamlessly across all devices.
         </p>
-        <button class="my-btn btn btn-default ">see my résumé</button>
-        <p class="get-in-touch"><a class="email" href="mailto:rosa@waselrosa.com">get in touch <i class="fa fa-envelope-o"></i></a></p>
+        <a id="resume" class="my-btn btn btn-default" href="RosaChoi-Resume.pdf" target="_blank">see my résumé</a>
+        <p class="get-in-touch"><a class="email fa fa-envelope-o" href="mailto:rosa@waselrosa.com"> get in touch</a></p>
       </div>
     </div>
 
     <!-- PROJECTS VIEW -->
     <div id="projects" class="row col-sm-12">
       <!-- PROJECT MENU -->
-      <div id="projectMenu" class="col-sm-5 col-sm-offset-3">
-        <svg class="project-menu-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 1072 68" enable-background="new 0 0 1072 68" xml:space="preserve">
-          <line fill="none" stroke="#696969" stroke-width="1.06" stroke-miterlimit="10" x1="35.6" y1="32.3" x2="1044.1" y2="32.3"/>
-          <circle id="projA" cx="35.6" cy="32.3" r="6.2"/>
-          <circle id="projB" cx="237.7" cy="32.1" r="6.2"/>
-          <circle id="projC" cx="439.3" cy="32.1" r="6.2"/>
-          <circle id="projD" cx="640.9" cy="32.1" r="6.2"/>
-          <circle id="projE" cx="842.5" cy="32.1" r="6.2"/>
-          <circle id="projF" cx="1044.1" cy="32.1" r="6.2"/>
+      <div id="projectMenu" class="col-sm-6 col-sm-offset-3">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 780 100" enable-background="new 0 0 780 60" xml:space="preserve">
+          <g id="dots">
+            <line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="31.1" y1="30" x2="751.1" y2="30"/>
+            <circle class="menu-dot" data="project1" cx="31.1" cy="30" r="4.8"/>
+            <circle class="menu-dot" data="project2" cx="175.4" cy="30.4" r="4.8"/>
+            <circle class="menu-dot" data="project3" cx="319.7" cy="29.4" r="4.8"/>
+            <circle class="menu-dot" data="project5" cx="462.6" cy="29.9" r="4.8"/>
+            <circle class="menu-dot" data="project4" cx="606.9" cy="30.4" r="4.8"/>
+            <circle class="menu-dot" data="project6" cx="751.1" cy="30.4" r="4.8"/>
+          </g>
+          <g id="projectIcons">
+            <g class="proj-cir hide" data="project1">
+              <circle class="cir01" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" cx="31" cy="30.1" r="25.3"/>
+              <path fill="#FFFFFF" d="M43 18.5H19c-0.7 0-1.2 0.6-1.2 1.2v20.7c0 0.7 0.6 1.2 1.2 1.2h24c0.7 0 1.2-0.6 1.2-1.2V19.8C44.2 19.1 43.7 18.5 43 18.5zM27.7 19.8c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2 -0.7 0-1.2-0.6-1.2-1.2C26.5 20.3 27 19.8 27.7 19.8zM24 19.8c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2s-1.2-0.6-1.2-1.2C22.7 20.3 23.3 19.8 24 19.8zM20.3 19.8c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2 -0.7 0-1.2-0.6-1.2-1.2C19 20.3 19.6 19.8 20.3 19.8zM43 40.4H19V23.5h1.2 21.5H43V40.4z"/>
+              <path fill="#FFFFFF" d="M35.1 30.1H21.9c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h13.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C35.5 30.3 35.3 30.1 35.1 30.1z"/>
+              <path fill="#FFFFFF" d="M31.1 34h-9.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h9.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C31.5 34.1 31.3 34 31.1 34z"/>
+              <path fill="#FFFFFF" d="M35.1 26.3H21.9c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h13.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C35.5 26.4 35.3 26.3 35.1 26.3z"/>
+            </g>
+            <g class="proj-cir hide" data="project2">
+              <circle class="cir02" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" cx="176.2" cy="29.4" r="25.3"/>
+              <path fill="#FFFFFF" d="M188.2 17.9h-24c-0.7 0-1.2 0.6-1.2 1.2v20.7c0 0.7 0.6 1.2 1.2 1.2h24c0.7 0 1.2-0.6 1.2-1.2V19.1C189.4 18.4 188.9 17.9 188.2 17.9zM172.9 19.1c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2 -0.7 0-1.2-0.6-1.2-1.2C171.7 19.7 172.2 19.1 172.9 19.1zM169.2 19.1c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2S168 21 168 20.4C168 19.7 168.5 19.1 169.2 19.1zM165.5 19.1c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2 -0.7 0-1.2-0.6-1.2-1.2C164.2 19.7 164.8 19.1 165.5 19.1zM188.2 39.8h-24V22.8h1.2H187h1.2V39.8z"/>
+              <path fill="#FFFFFF" d="M180.3 29.4h-13.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h13.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C180.7 29.6 180.5 29.4 180.3 29.4z"/>
+              <path fill="#FFFFFF" d="M176.3 33.3h-9.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h9.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C176.7 33.5 176.5 33.3 176.3 33.3z"/>
+              <path fill="#FFFFFF" d="M180.3 25.6h-13.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h13.2c0.2 0 0.4-0.2 0.4-0.4V26C180.7 25.8 180.5 25.6 180.3 25.6z"/>
+            </g>
+            <g class="proj-cir hide" data="project3">
+              <circle stroke="#FFFFFF" stroke-miterlimit="10" cx="320.5" cy="29.4" r="25.3"/>
+              <path fill="#FFFFFF" d="M332.4 17.9h-24c-0.7 0-1.2 0.6-1.2 1.2v20.7c0 0.7 0.6 1.2 1.2 1.2h24c0.7 0 1.2-0.6 1.2-1.2V19.1C333.7 18.4 333.1 17.9 332.4 17.9zM317.2 19.1c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2 -0.7 0-1.2-0.6-1.2-1.2C315.9 19.7 316.5 19.1 317.2 19.1zM313.4 19.1c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2s-1.2-0.6-1.2-1.2C312.2 19.7 312.8 19.1 313.4 19.1zM309.7 19.1c0.7 0 1.2 0.6 1.2 1.2 0 0.7-0.6 1.2-1.2 1.2 -0.7 0-1.2-0.6-1.2-1.2C308.5 19.7 309 19.1 309.7 19.1zM332.4 39.8h-24V22.8h1.2 21.5 1.2V39.8z"/>
+              <path fill="#FFFFFF" d="M324.6 29.4h-13.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h13.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C324.9 29.6 324.8 29.4 324.6 29.4z"/>
+              <path fill="#FFFFFF" d="M320.6 33.3h-9.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h9.2c0.2 0 0.4-0.2 0.4-0.4v-1.1C321 33.4 320.8 33.3 320.6 33.3z"/>
+              <path fill="#FFFFFF" d="M324.6 25.6h-13.2c-0.2 0-0.4 0.2-0.4 0.4v1.1c0 0.2 0.2 0.4 0.4 0.4h13.2c0.2 0 0.4-0.2 0.4-0.4V26C324.9 25.8 324.8 25.6 324.6 25.6z"/>
+            </g>
+            <g class="proj-cir hide" data="project4">
+              <circle fill="#666666" stroke="#FFFFFF" stroke-miterlimit="10" cx="606.9" cy="29.5" r="25"/>
+              <path fill="#FFFFFF" d="M618.7 18.1H595c-0.7 0-1.2 0.5-1.2 1.2v20.4c0 0.7 0.5 1.2 1.2 1.2h23.7c0.7 0 1.2-0.5 1.2-1.2V19.3C619.9 18.6 619.4 18.1 618.7 18.1zM618.7 23v11.9h-17.1V23h15.8H618.7zM603.6 19.3c0.7 0 1.2 0.5 1.2 1.2 0 0.7-0.5 1.2-1.2 1.2 -0.7 0-1.2-0.5-1.2-1.2C602.4 19.8 602.9 19.3 603.6 19.3zM599.9 19.3c0.7 0 1.2 0.5 1.2 1.2 0 0.7-0.5 1.2-1.2 1.2 -0.7 0-1.2-0.5-1.2-1.2C598.7 19.8 599.2 19.3 599.9 19.3zM596.2 19.3c0.7 0 1.2 0.5 1.2 1.2 0 0.7-0.5 1.2-1.2 1.2 -0.7 0-1.2-0.5-1.2-1.2C595 19.8 595.6 19.3 596.2 19.3zM595 23h1.2 4.3v16.7H595V23zM601.6 39.7V36h17.1v3.7H601.6z"/>
+            </g>
+            <g class="proj-cir hide" data="project5">
+              <circle fill="#666666" stroke="#FFFFFF" stroke-miterlimit="10" cx="462.6" cy="30" r="25"/>
+              <path fill="#FFFFFF" d="M474.4 18.6h-23.7c-0.7 0-1.2 0.5-1.2 1.2v20.4c0 0.7 0.5 1.2 1.2 1.2h23.7c0.7 0 1.2-0.5 1.2-1.2V19.8C475.6 19.1 475.1 18.6 474.4 18.6zM474.4 23.5v11.9h-17.1V23.5h15.8H474.4zM459.3 19.8c0.7 0 1.2 0.5 1.2 1.2 0 0.7-0.5 1.2-1.2 1.2 -0.7 0-1.2-0.5-1.2-1.2C458.1 20.3 458.6 19.8 459.3 19.8zM455.6 19.8c0.7 0 1.2 0.5 1.2 1.2 0 0.7-0.5 1.2-1.2 1.2 -0.7 0-1.2-0.5-1.2-1.2C454.4 20.3 455 19.8 455.6 19.8zM452 19.8c0.7 0 1.2 0.5 1.2 1.2 0 0.7-0.5 1.2-1.2 1.2 -0.7 0-1.2-0.5-1.2-1.2C450.7 20.3 451.3 19.8 452 19.8zM450.7 23.5h1.2 4.3v16.7h-5.5V23.5zM457.4 40.2v-3.7h17.1v3.7H457.4z"/>
+            </g>
+            <g class="proj-cir hide" data="project6">
+              <circle fill="#B2283A" stroke="#FFFFFF" stroke-miterlimit="10" cx="751.1" cy="30.4" r="24.7"/>
+              <path fill="#FFFFFF" d="M742.6 34.5c-1.2 2.7-2.3 5.3-3.5 8 0 0 0 0 0.1 0 2.7-1.2 5.3-2.3 8-3.5C745.7 37.6 744.1 36 742.6 34.5z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M742.6 34.5c1.5 1.5 3.1 3.1 4.6 4.6 -2.7 1.1-5.3 2.3-8 3.5 0 0 0 0-0.1 0C740.3 39.8 741.4 37.2 742.6 34.5z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M762.2 24.2c0.6-0.6 0.9-1.5 0.9-2.4 0-1.9-1.5-3.5-3.5-3.5 -0.9 0-1.7 0.3-2.4 0.9L762.2 24.2z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M761.6 24.4l-4.6-4.7c-0.1-0.1-0.2-0.1-0.3 0l-13.5 13.7c-0.1 0.1-0.1 0.2 0 0.3l4.6 4.7c0.1 0.1 0.2 0.1 0.3 0l13.5-13.7C761.7 24.6 761.7 24.5 761.6 24.4zM758.6 24.1l-11.4 11.5c-0.1 0.1-0.2 0.1-0.3 0l-2.2-2.1c-0.1-0.1-0.1-0.2 0-0.3l11.4-11.5c0.1-0.1 0.2-0.1 0.3 0l2.2 2.1C758.6 23.9 758.6 24.1 758.6 24.1z"/>
+            </g>
+          </g>
         </svg>
       </div>
-      <div id="projectContainer" class="project container col-sm-8 col-sm-offset-2 text-center">
-        <h2 class="project-title">gCamp</h2>
+    </div>
 
-        <div class="row project-details">
-          <ul class="list-unstyled list-inline">
-            <li>
-              ROLE <strong>DEVELOPER</strong>
-            </li>
-            <li>
-              CONTEXT <strong>SCHOOL PROJECT</strong>
-            </li>
-            <li>
-              DATE <strong>DEC 2014</strong>
-            </li>
-          </ul>
-        </div>
-        <div class="row project-description">
-          <p>Remake of Basecamp - a simplified version of a project management application. Create an account, establish a project, add team members and assign tasks.</p>
-        </div>
-        <div class="project-sample-image">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 963.1 597.1" enable-background="new 0 0 963.1 597.1" xml:space="preserve">
-            <g id="Layer_4">
-              <image overflow="visible" width="2376" height="1250" xlink:href="img/gcamp_tasks.png" transform="matrix(0.392 0 0 0.392 18.3551 90.6765)"/>
-            </g>
-            <g id="Layer_6">
-              <image overflow="visible" width="2544" height="1338" xlink:href="img/gcamp_landing.png" transform="matrix(0.3659 0 0 0.3659 19.0707 51.8477)"/>
-            </g>
-            <g id="Layer_5">
-              <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="18.4" y1="52.8" x2="949.8" y2="52.8"/>
-              <path fill="none" stroke="#000000" stroke-width="2.96" stroke-miterlimit="10" d="M949.8 580.7H18.4V27.3c0-8.2 6.8-15 15-15h901.5c8.2 0 15 6.8 15 15V580.7z"/>
-              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="42.6" cy="33.9" r="6.5"/>
-              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="64.1" cy="33.9" r="6.5"/>
-              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="85.6" cy="33.9" r="6.5"/>
-            </g>
-          </svg>
+    <!-- PROJECT ONE -->
+    <div id="project1" class="project container col-sm-8 col-sm-offset-2 text-center hide">
+      <h2 class="project-title">gCamp</h2>
 
-        </div>
-        <div class="row project-technology">
-          <p><strong>Technologies used for this project:</strong></p>
-          <ul class="technologies list-unstyled list-inline">
-            <li>Ruby on Rails</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-        <div class="row project-outcome">
-          <p><strong>Outcome</strong></p>
-          <ul class="list-unstyled list-inline">
-            <li class="fa fa-github"><a class="project-link" href="https://github.com/RosaChoi/gCamp" target="_blank"> Repo</a></li>
-            <li class="fa fa-desktop"><a class="project-link" href="https://still-waters-3663.herokuapp.com/" target="_blank"> Launch App</a></li>
-          </ul>
-        </div>
+      <div class="row project-details">
+        <ul class="list-unstyled list-inline">
+          <li>
+            ROLE <strong>DEVELOPER</strong>
+          </li>
+          <li>
+            CONTEXT <strong>SCHOOL PROJECT</strong>
+          </li>
+          <li>
+            DATE <strong>DEC 2014</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="row project-description">
+        <p>Remake of Basecamp - a simplified version of a project management application. Create an account, establish a project, add team members and assign tasks.</p>
+      </div>
+      <div class="project-sample-image">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 963.1 597.1" enable-background="new 0 0 963.1 597.1" xml:space="preserve">
+          <g id="Layer_4">
+            <image overflow="visible" width="2376" height="1250" xlink:href="img/gcamp_tasks.png" transform="matrix(0.392 0 0 0.392 18.3551 90.6765)"/>
+          </g>
+          <g id="Layer_6">
+            <image overflow="visible" width="2544" height="1338" xlink:href="img/gcamp_landing.png" transform="matrix(0.3659 0 0 0.3659 19.0707 51.8477)"/>
+          </g>
+          <g id="Layer_5">
+            <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="18.4" y1="52.8" x2="949.8" y2="52.8"/>
+            <path fill="none" stroke="#000000" stroke-width="2.96" stroke-miterlimit="10" d="M949.8 580.7H18.4V27.3c0-8.2 6.8-15 15-15h901.5c8.2 0 15 6.8 15 15V580.7z"/>
+            <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="42.6" cy="33.9" r="6.5"/>
+            <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="64.1" cy="33.9" r="6.5"/>
+            <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="85.6" cy="33.9" r="6.5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="row project-technology">
+        <p><strong>Technologies used for this project:</strong></p>
+        <ul class="technologies list-unstyled list-inline">
+          <li>Ruby on Rails</li>
+          <li>PostgreSQL</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="row project-outcome">
+        <p><strong>Outcome</strong></p>
+        <ul class="list-unstyled list-inline">
+          <li class="fa fa-github"><a class="project-link" href="https://github.com/RosaChoi/gCamp" target="_blank"> Repo</a></li>
+          <li class="fa fa-desktop"><a class="project-link" href="https://still-waters-3663.herokuapp.com/" target="_blank"> Launch App</a></li>
+        </ul>
       </div>
     </div>
+
+    <!-- PROJECT TWO -->
+    <div id="project2" class="project container col-sm-8 col-sm-offset-2 text-center hide">
+      <h2 class="project-title">Travel Journal</h2>
+
+      <div class="row project-details">
+        <ul class="list-unstyled list-inline">
+          <li>
+            ROLE <strong>DEVELOPER</strong>
+          </li>
+          <li>
+            CONTEXT <strong>SCHOOL PROJECT</strong>
+          </li>
+          <li>
+            DATE <strong>FEB 2015</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="row project-description">
+        <p>Share your journey by creating a journal with photo and a map. You can write comments on other people’s journey and favorite posts.</p>
+      </div>
+      <div class="project-sample-image">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 1142.9 750.4" enable-background="new 0 0 1142.9 750.4" xml:space="preserve">
+          <g id="Layer_3">
+            <image overflow="visible" width="2546" height="1436" xlink:href="img/travel-journal.png" transform="matrix(0.3223 0 0 0.3223 162.4917 61.3572)"/>
+            <rect x="162.5" y="49" fill="#222222" width="820.5" height="13.4"/>
+          </g>
+          <g id="Layer_4">
+            <rect x="162.5" y="48" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="820.5" height="514.5"/>
+            <path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M1018.9 598.5H125v-549c0-21.5 17.4-38.9 38.9-38.9H980c21.5 0 38.9 17.4 38.9 38.9V598.5z"/>
+            <path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M572.6 28l0.3 0c2.7 0.2 4.7 2.5 4.5 5.2l0 0.3c-0.2 2.7-2.5 4.7-5.2 4.5l-0.3 0c-2.7-0.2-4.7-2.5-4.5-5.2l0-0.3C567.6 29.9 569.9 27.9 572.6 28z"/>
+            <path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M1126.9 634.5H17c-4.9 0-9-4-9-9v-18c0-5 4.1-9 9-9h1109.9c5 0 9 4 9 9v18C1135.9 630.4 1131.9 634.5 1126.9 634.5z"/>
+            <path fill="none" stroke="#000000" stroke-width="2.32" stroke-miterlimit="10" d="M636 616.5H508c-7.7 0-14-6.3-14-14v-4h156v4C650 610.2 643.7 616.5 636 616.5z"/>
+          </g>
+        </svg>
+        <img class="img-responsive col-sm-offset-1" src="img/travel-journal02.png">
+      </div>
+      <div class="row project-technology">
+        <p><strong>Technologies used for this project:</strong></p>
+        <ul class="technologies list-unstyled list-inline">
+          <li>Ruby on Rails</li>
+          <li>Ember.js</li>
+          <li>Google MAP API</li>
+          <li>PostgreSQL</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="row project-outcome">
+        <p><strong>Outcome</strong></p>
+        <ul class="list-unstyled list-inline">
+          <li class="fa fa-github"><a class="project-link" href="https://github.com/RosaChoi/gCamp" target="_blank"> Repo</a></li>
+          <li class="fa fa-desktop"><a class="project-link" href="https://still-waters-3663.herokuapp.com/" target="_blank"> Launch App</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT THREE -->
+    <div id="project3" class="project container col-sm-8 col-sm-offset-2 text-center hide">
+      <h2 class="project-title">Comeback</h2>
+
+      <div class="row project-details">
+        <ul class="list-unstyled list-inline">
+          <li>
+            ROLE <strong>DEVELOPER</strong>
+          </li>
+          <li>
+            CONTEXT <strong>GROUP PROJECT</strong>
+          </li>
+          <li>
+            DATE <strong>APR 2015</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="row project-description">
+        <p>Comeback is a data visualization and storytelling narrative that describes the history of the gray wolf in the contiguous US, from persecution to restoration. It features a map visualizing wolf populations over time and interactive infographics.</p>
+      </div>
+      <div class="project-sample-image">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 963.1 597.1" enable-background="new 0 0 963.1 597.1" xml:space="preserve">
+          <g id="Layer_4">
+            <image overflow="visible" width="1280" height="800" xlink:href="img/comeback1.png" transform="matrix(0.7323 0 0 0.7323 15.0707 42.3755)"/>
+          </g>
+          <g id="Layer_3" display="none">
+            <rect x="135.2" y="71.7" display="inline" fill="none" stroke="#000000" stroke-width="2.54" stroke-miterlimit="10" width="694.4" height="435.4"/>
+            <path display="inline" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M860.1 537.6H103.5V78.9c0-21.5 17.4-38.9 38.9-38.9h678.7c21.5 0 38.9 17.4 38.9 38.9V537.6z"/>
+            <path display="inline" fill="none" stroke="#000000" stroke-width="2.54" stroke-miterlimit="10" d="M482.3 54.8l0.2 0c2.3 0.1 4 2.1 3.8 4.4l0 0.2c-0.1 2.3-2.1 4-4.4 3.8l-0.2 0c-2.3-0.1-4-2.1-3.8-4.4l0-0.2C478.1 56.4 480 54.7 482.3 54.8z"/>
+            <path display="inline" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M950.1 568.1H13.5c-4.9 0-9-4-9-9v-12.5c0-4.9 4-9 9-9h936.6c5 0 9 4.1 9 9v12.5C959.1 564 955 568.1 950.1 568.1z"/>
+            <path display="inline" fill="none" stroke="#000000" stroke-width="1.97" stroke-miterlimit="10" d="M533.8 552.8h-104c-7.7 0-14-6.3-14-14v-1.2h132v1.2C547.8 546.5 541.5 552.8 533.8 552.8z"/>
+          </g>
+          <g id="Layer_6">
+            <path fill="none" stroke="#000000" stroke-width="2.96" stroke-miterlimit="10" d="M949.8 580.7H18.4V27.3c0-8.2 6.8-15 15-15h901.5c8.2 0 15 6.8 15 15V580.7z"/>
+            <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="18.4" y1="52.8" x2="949.8" y2="52.8"/>
+            <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="42.6" cy="33.9" r="6.5"/>
+            <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="64.1" cy="33.9" r="6.5"/>
+            <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="85.6" cy="33.9" r="6.5"/>
+          </g>
+        </svg>
+        <img class="img-responsive" src="img/comeback2.png">
+      </div>
+      <div class="row project-technology">
+        <p><strong>Technologies used for this project:</strong></p>
+        <ul class="technologies list-unstyled list-inline">
+          <li>D3.js</li>
+          <li>jQuery</li>
+          <li>Ruby</li>
+          <li>Sass</li>
+          <li>SVG</li>
+        </ul>
+      </div>
+      <div class="row project-outcome">
+        <p><strong>Outcome</strong></p>
+        <ul class="list-unstyled list-inline">
+          <li class="fa fa-github"><a class="project-link" href="https://github.com/laurenjrichie/wolf-story/tree/gh-pages" target="_blank"> Repo</a></li>
+          <li class="fa fa-desktop"><a class="project-link" href="http://laurenjrichie.github.io/wolf-story/" target="_blank"> Launch App</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT FOUR -->
+    <div id="project4" class="project container col-sm-8 col-sm-offset-2 text-center hide">
+      <h2 class="project-title">Architect's Artist</h2>
+
+      <div class="row project-details">
+        <ul class="list-unstyled list-inline">
+          <li>
+            ROLE <strong>FRONT-END DEVELOPER | DESIGNER</strong>
+          </li>
+          <li>
+            CONTEXT <strong>CONTRACT WORK</strong>
+          </li>
+          <li>
+            DATE <strong>AUG 2014</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="row project-description">
+        <p>San Francisco based artist Wasel commissioned Rosa to develop a visual identity and website that presents the whole spectrum of his art career and provides a platform for his other projects.</p>
+      </div>
+      <div class="project-sample-image">
+        <img class="img-responsive" src="img/aa-web.jpg">
+      </div>
+      <div class="row project-technology">
+        <p><strong>Technologies used for this project:</strong></p>
+        <ul class="technologies list-unstyled list-inline">
+          <li>jQuery</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>HTML</li>
+          <li>Adobe Photoshop</li>
+        </ul>
+      </div>
+      <div class="row project-outcome">
+        <p><strong>Outcome</strong></p>
+        <ul class="list-unstyled list-inline">
+          <li class="fa fa-github"><a class="project-link" href="https://github.com/RosaChoi/ArchitectsArtist/tree/gh-pages" target="_blank"> Repo</a></li>
+          <li class="fa fa-desktop"><a class="project-link" href="http://architectsartist.com/" target="_blank"> View Website</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT FIVE -->
+    <div id="project5" class="project container col-sm-8 col-sm-offset-2 text-center hide">
+      <h2 class="project-title">pocketSOHO</h2>
+
+      <div class="row project-details">
+        <ul class="list-unstyled list-inline">
+          <li>
+            ROLE <strong>FRONT-END DEVELOPER | DESIGNER</strong>
+          </li>
+          <li>
+            CONTEXT <strong>CONTRACT WORK</strong>
+          </li>
+          <li>
+            DATE <strong>OCT 2014</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="row project-description">
+        <p>pocketSOHO is a Web App that empowers Small/Home business owners to run their business smoothly and efficiently. pocketSOHO enables users to communicate with their customers 24/7; schedule and keep track of appointments; and send invoices, track payments, get tax reporting done at their fingertips. pocketSOHO is a consolidated, on the go solution for busy individuals who are in charge of their business.
+The goal was to create a brand identity for pocketSOHO to attract potential users and engage right messages to audiences from the start.</p>
+      </div>
+      <div class="project-sample-image">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 1142.9 750.4" enable-background="new 0 0 1142.9 750.4" xml:space="preserve">
+          <g id="Layer_5">
+            <image overflow="visible" width="2554" height="1396" xlink:href="img/pocketSoho.png" transform="matrix(0.3253 0 0 0.3253 156.2986 64.7741)"/>
+            <rect x="156.2" y="51.1" fill="#F58B20" width="830.9" height="13.7"/>
+          </g>
+          <g id="Layer_2">
+            <path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M1008.6 635.6H134.2c-7.9 0-14.4-6.5-14.4-14.4V28.7c0-7.9 6.5-14.4 14.4-14.4h874.5c7.9 0 14.4 6.5 14.4 14.4v592.5C1023 629.1 1016.6 635.6 1008.6 635.6z"/>
+            <rect x="156.2" y="50.8" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="830.9" height="466.7"/>
+            <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="119.8" y1="556.2" x2="1023" y2="556.2"/>
+            <path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M470.4 635.6c0 0-1.5 54.8-6.8 65.1 -14.2 27.5-55.8 43.3-55.8 43.3h313c0 0-43.4-27.1-47.8-62.6 -3.4-27.2-4.6-45.8-4.6-45.8"/>
+            <circle fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" cx="570.5" cy="593.5" r="21.6"/>
+          </g>
+        </svg>
+        <img class="img-responsive" src="img/pocketsoho-id.jpg">
+      </div>
+      <div class="row project-technology">
+        <p><strong>Technologies used for this project:</strong></p>
+        <ul class="technologies list-unstyled list-inline">
+          <li>jQuery</li>
+          <li>Sass</li>
+          <li>HTML</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+        </ul>
+      </div>
+      <div class="row project-outcome">
+        <p><strong>Outcome</strong></p>
+        <ul class="list-unstyled list-inline">
+          <li class="fa fa-github"><a class="project-link" href="https://github.com/RosaChoi/pocketSOHO-FE/tree/gh-pages" target="_blank"> Repo</a></li>
+          <li class="fa fa-desktop"><a class="project-link" href="http://pocketsoho.herokuapp.com/" target="_blank"> Launch App</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT SIX -->
+    <div id="project6" class="project container col-sm-8 col-sm-offset-2 text-center hide">
+      <h2 class="project-title">Design Projects</h2>
+
+      <div class="row project-details">
+        <ul class="list-unstyled list-inline">
+          <li>
+            ROLE <strong>FRONT-END DEVELOPER | DESIGNER</strong>
+          </li>
+          <li>
+            CONTEXT <strong>CONTRACT WORK</strong>
+          </li>
+          <li>
+            DATE <strong>2014</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="row project-description">
+        <p class="text-center">Architect's Artist - Visual Identity</p>
+      </div>
+      <div class="project-sample-image">
+        <img class="img-responsive text-center" src="img/aa-logo.png">
+      </div>
+      <div class="row project-description ">
+        <p class="text-center">The Land of Unlikeness by Reindert Falkenburg - Book Cover Illustration</p>
+      </div>
+      <div class="project-sample-image">
+        <img class="img-responsive col-sm-offset-2" src="img/unlikeness.png">
+      </div>
+      <div class="row project-description">
+        <p class="text-center">The Time Locket - Visual Identity, Book Design and Website Development</p>
+      </div>
+      <div class="project-sample-image">
+        <img class="img-responsive" src="img/ttl.png">
+      </div>
+      <div class="row project-technology">
+        <p><strong>Technologies used for this project:</strong></p>
+        <ul class="technologies list-unstyled list-inline">
+          <li>jQuery</li>
+          <li>WordPress</li>
+          <li>HTML</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Sketching and Watercolor</li>
+        </ul>
+      </div>
+      <div class="row project-outcome">
+        <p><strong>Outcome</strong></p>
+        <ul class="list-unstyled list-inline">
+          <li class="fa fa-book"><a class="project-link" href="http://nyuad.nyu.edu/en/academics/faculty/reindert-falkenburg.html" target="_blank"> The Land of Unlikeness</a></li>
+          <li class="fa fa-desktop"><a class="project-link" href="http://thetimelocket.com/" target="_blank"> The Time Locket</a></li>
+        </ul>
+      </div>
+    </div>
+
     <!-- PARTICLE BACKGROUND -->
     <div id="particles-js" class="col-sm-12"></div>
 
@@ -146,9 +456,9 @@
           Follow me on
           <a class="github" href="https://github.com/RosaChoi" target="_blank"> Github</a>
           <a class="linkedin" href="https://www.linkedin.com/in/rosachoi7" target="_blank">Linkedin </a>
-          <a class="medium" href="https://medium.com/@rosa_uniq" target="_blank">Medium</a>
+          <!-- <a class="medium" href="https://medium.com/@rosachoi" target="_blank">Medium</a> -->
           and
-          <a class="email" href="mailto:rosa@waselrosa.com">rosa.uniq@gmail.com</a>
+          <a class="email-contact" href="mailto:rosa@waselrosa.com">rosa.uniq@gmail.com</a>
         </p>
 
       </div>

@@ -231,8 +231,9 @@ strong {
 .project-description {
 	line-height: 2;
 	font-size: 15px;
-	padding: 20px 60px;
+	padding: 20px 60px 0px 60px;
 	text-align: left;
+	margin-top: 3em;
 }
 
 .project-technology {
@@ -299,4 +300,15 @@ strong {
 
 .hide {
 	display: none;
+}
+
+@media screen and (max-width:465px){
+	footer {
+		height: 70px;
+	}
+
+	.bio-text {
+		top: 115px;
+	}
+
 }
